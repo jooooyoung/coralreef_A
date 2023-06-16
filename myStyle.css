@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&family=Open+Sans:wght@300&display=swap');
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+#mainContainer{
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.row
+{
+   width: 1080px;
+   display: flex;
+   background-color:rgb(0, 0, 0);
+   margin: auto;
+   padding: 0px 5px;
+   margin-bottom: 10px;
+}
+
+.col-1{ width: 170px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+.col-2{ width: 350px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+.col-3{ width: 530px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+.col-4{ width: 710px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+.col-5{ width: 890px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+.col-6{ width: 1070px; margin: 0px 5px; background-color: rgb(0, 0, 0); }
+
+.h-50{height: 50px;}
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+.h-400{height: 400px;}
+.h-500{height: 500px;}
+.h-600{height: 600px;}
+
+.bg-green{background-color: green;}
+.bg-pink{background-color: pink;}
+.bg-gray{background-color: gray;}
+
+.maintype{
+    font-size: 90px;
+    margin-top: 270px;
+    line-height: 93px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.maintype02{
+    font-size: 9px;
+    line-height: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.subtype01{
+    font-size: 17px;
+    position: relative; 
+    margin-top: 270px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.sub-img{
+    position: static;
+}
+
+
+.subtype02{
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 270px;
+    color: rgb(196, 196, 196);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.subtype04{
+    font-size: 17px;
+    margin-top: 105px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.subtype05{
+
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 105px;
+    color: rgb(196, 196, 196);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+}
+
+.subtype06{
+
+    font-size: 17px;
+    line-height: 15px;
+    margin-top: 145px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+
+}
+
+.subtype07{
+
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 135px;
+    color: rgb(196, 196, 196);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+}
+
+
+
+.with-background {
+    background-image: url('./png/main_blur02.png'); /* 이미지 파일 경로 */
+    background-size: 40%; /* 이미지를 커버하는 크기로 조정 */
+    background-position: 80% 90%; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
+}
+
+
+
+#menuBar{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 0.7px white;
+}
+
+#menus{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+#menulist{
+    display: flex;
+    list-style: none;
+    font-size: 10px;
+    align-items: center;
+    color: rgb(106, 106, 106);
+    transition: color 0.5s;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+#menulist li{
+    margin: 10px 30px;
+}
+
+#menulist li.active {
+    color: white;
+}
+
+#menulist li:hover{
+    color:rgb(255, 255, 255);
+    transition: color 0.5s;
+}
+
+#contents{
+    width: 100%;
+}
+
+#content01{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height:100vh;
+}
+
+#content02{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height:100vh;
+}
+#content03{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height:100vh;
+}
+#content04{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height:100vh;
+}
+#content05{
+    background-color: rgb(0, 0, 0);
+    height:100vh;
+}
+
+.innerGap{
+display: flex;
+width: 100%;
+height: 200px;
+}
+
+/* 메뉴바 원 */
+#menulist li.active::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px auto -3px;
+}
+
+/* 메뉴바 색상 고정 */
+#menulist li.active {
+    color: white;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .arrow-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+ }
+
+ .gray-box01{
+    background-color: rgb(64, 64, 64);
+    width: 340px;
+    height: 420px;
+    margin-top: 40px;
+    position:relative;
+    display: inline-block;
+ }
+
+
+ /*.gray-box02{
+    background-color: rgb(64, 64, 64);
+    width: 350px;
+    height: 480px;
+    margin-top: 30px;
+ }*/
+
+ footer{
+    background-color: rgb(0, 0, 0);
+    border-top: 0.7px solid white;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 3px;
+ }
+
+ .marginTop_10
+ {
+    margin-top: 17rem;
+    margin-bottom: 0.5rem;
+ }
+
+ img{width: 100%;}
+
+ .marginTop_20{
+    margin-top: 11.5rem;
+    margin-bottom: 0.5rem;
+ }
+
+ .signicon{
+    margin:38px 72px;
+    width:60%;
+ }
+
+ .icontype01{
+    margin: -18px 40px;
+    font-size: 15px;
+    color:white;
+    line-height: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+ }
+
+ .icontype02{
+    margin: -18px 40px;
+    font-size: 15px;
+    color:white;
+    line-height: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+ }
+
+ .subtype08{
+    margin: 30px 100px 0;
+    color: rgb(196, 196, 196);
+    line-height: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+ }
+
+ .subtype08-1{
+    margin: 320px 100px 0;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+ }
+
+ .gray-box03{
+    background-color: rgb(64, 64, 64);
+    width: 500px;
+    height: 230px;
+    margin: -300px 335px;
+    position:absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.gray-box04{
+    background-color: rgb(64, 64, 64);
+    width: 450px;
+    height: 180px;
+    margin: -280px 360px;
+    position:absolute;
+    border-top: 0.7px solid white;
+    padding: 0px;
+}
+
+.mapicon{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: -245px 360px;
+}
+
+.mapimg{
+    position:absolute;
+    width: 1080px;
+ }
+
+.maptype01{
+    position: relative;
+    margin:50px 0px 0px 180px;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.maptype02{
+    position: relative;
+    margin:16px 0px 35px 180px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    
+}
+
+.graphnumber01{
+    position: absolute;
+    margin: -193px 409px 0px;
+    font-size: 27px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.white-circle{
+    width:12px;
+    height:12px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 445px 0px 0px 955px;
+    cursor: pointer;
+    position: relative;
+}
+
+.square-box{
+    display: none;
+    margin-top: -12px;
+}
+
+.white-circle:hover + .square-box{
+    display: block;
+}
+
+
+.white-circle02{
+    width:12px;
+    height:12px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: -160px 0px 0px 870px;
+    cursor: pointer;
+    position: relative;
+}
+
+.maptype03{
+    position: relative;
+    margin:50px 0px 0px 180px;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.maptype04{
+    position: relative;
+    margin:14px 0px 35px 180px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.square-box02{
+    display: none;
+    margin-top: 136px;
+    position: absolute;
+}
+
+.gray-box05{
+    background-color: rgb(64, 64, 64);
+    width: 500px;
+    height: 230px;
+    margin: -300px 335px;
+    position:absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.gray-box06{
+    background-color: rgb(64, 64, 64);
+    width: 450px;
+    height: 180px;
+    margin: -280px 360px;
+    position:absolute;
+    border-top: 0.7px solid white;
+    padding: 0px;
+}
+
+.white-circle02:hover + .square-box02{
+    display: block;
+}
+
+.white-circle03{
+    width:12px;
+    height:12px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 80px 0px 0px 710px;
+    cursor: pointer;
+    position: relative;
+}
+
+.square-box03{
+    display: none;
+    margin-top: 42px;
+    position: absolute;
+}
+
+.gray-box07{
+    background-color: rgb(64, 64, 64);
+    width: 500px;
+    height: 230px;
+    margin: -300px 335px;
+    position:absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.gray-box08{
+    background-color: rgb(64, 64, 64);
+    width: 450px;
+    height: 180px;
+    margin: -280px 360px;
+    position:absolute;
+    border-top: 0.7px solid white;
+    padding: 0px;
+}
+
+.maptype05{
+    position: relative;
+    margin:50px 0px 0px 180px;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+
+}
+
+.maptype06{
+    position: relative;
+    margin:14px 0px 35px 180px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.white-circle03:hover + .square-box03{
+    display: block;
+}
+
+.mapicon02{
+    position:absolute;
+    width: 130px;
+    height: 130px;
+    margin:-240px 375px;
+}
+
+.mapicon03{
+    position:absolute;
+    width: 130px;
+    height: 130px;
+    margin:-240px 375px;
+}
